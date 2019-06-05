@@ -12,22 +12,13 @@ dbuser=$2
 dbpassword=$3
 dbname=$4
 cname=${5,,}
-adminfirst=$6
-adminlast=$7
-adminemail=$8
-adminuser=$9
-adminpassword=${10}
 cachehost=${11}
 magentourl=${12}
 protocol=${13}
-magentolanguage=${14}
-magentocurrency=${15}
-magentotimezone=${16}
 
 cd
 #curl -o magento.tar.gz $magentourl
 #echo "Running command aws s3 cp ${magentourl} magento.tar.gz"
-#aws s3 cp $magentourl magento.tar.gz
 #if [ $? -ne 0 ]; then
 #    echo "Error downloading media from s3"
 #    exit 1
